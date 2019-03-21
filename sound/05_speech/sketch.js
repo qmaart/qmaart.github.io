@@ -4,26 +4,26 @@
 // example source code: https://github.com/IDMNYU/p5.js-speech/blob/master/examples/01simple.html
 
 // let talkButton;
-let talkButton= select('#talk');
-let voice = new p5.Speech();//new p5.Speech object
+let talkButton = select('#talk');
+let voice = new p5.Speech(); //new p5.Speech object
 let wordInput;
 
 function setup() {
-talkButton= select('#talk');
-wordInput = select ('#speechInput');
-talkButton.mousePressed(speak);
+  talkButton = select('#talk');
+  wordInput = select('#speechInput');
+  talkButton.mousePressed(speak);
 
-voice.listVoices();
-voice.setVoice('Melina');
-voice.setPitch('.1');
-voice.setRate('1.9');
+  voice.listVoices();
+  voice.setVoice('Melina');
+  voice.setPitch('.1');
+  voice.setRate('1.9');
 }
 
 function draw() {
 
 }
 
-function speak(){
-  // voice.speak('so so so cool');
+function speak() {
+  voice.speak('so so so cool');
   voice.speak(wordInput.value());
 }
