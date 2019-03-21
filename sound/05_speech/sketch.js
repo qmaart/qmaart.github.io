@@ -14,9 +14,7 @@ function setup() {
   talkButton.mousePressed(speak);
 
   voice.listVoices();
-  voice.setVoice('Melina');
-  voice.setPitch('.1');
-  voice.setRate('1.9');
+
 }
 
 function draw() {
