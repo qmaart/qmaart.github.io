@@ -1,0 +1,65 @@
+.block-9 .form-control {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  font-size: 15px; }
+
+  .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+
+  .contact-section .contact-info p a {
+    color: #1a1a1a; }
+
+  .contact-section .info {
+    width: 100%; }
+
+  .contact-section .contact-form {
+    width: 100%; }
+
+  .ftco-section {
+    grid-column:1/-1;
+    grid-row: 1/-1;
+      padding: 3em 1.8em;
+      padding-top: 30em;
+      padding-bottom: 40px;
+      padding-left: 30em;
+      padding-right: 30em;
+      position: relative; }
+      @media (max-width: 991.98px) {
+        .ftco-section {
+          padding: 3em 0; } }
+
+.ftco-section-no-padding {
+      padding: 0; }
+
+    .containerContact {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto; }
+      @media (min-width: 576px) {
+        .container {
+          max-width: 540px; } }
+      @media (min-width: 768px) {
+        .container {
+          max-width: 720px; } }
+      @media (min-width: 992px) {
+        .container {
+          max-width: 960px; } }
+      @media (min-width: 1200px) {
+        .container {
+          max-width: 1140px; } }
+
+    .container-fluid {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto; }
