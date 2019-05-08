@@ -10,10 +10,10 @@ let img;
 //of your sketch otherwise they may appear with a little delay
 function preload() {
   //background image
-  img = loadImage('image/pan.jpg');
+  img = loadImage('Egg/image/pan.jpg');
   //create an animation from a sequence of numbered images
   //pass the first and the last file name and it will try to find the ones in between
-  egg = loadAnimation('image/egg00.png', 'image/egg30.png');
+  egg = loadAnimation('Egg/image/egg00.png', 'Egg/image/egg30.png');
   // img1 = loadImage('eggflipJPG/eggflip（front）00.png');
   //create an animation listing all the images files
   egg.looping = false;
