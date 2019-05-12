@@ -51,4 +51,5 @@ function draw() {
 function mousePressed() {
   //rewind on mouse pressed - change frame to 0
   egg.goToFrame(30);
+  
 }

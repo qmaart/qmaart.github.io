@@ -2,7 +2,7 @@
 //click on the canvas to create self destructing sprite and toggle visibility
 
 var egg;
-let img, img1;
+let img, img1,img2;
 var count=1;
 var henY=-1100;
 
@@ -15,15 +15,16 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(768, 1024);
-  egg = createSprite(384, 512);
+  createCanvas(1024, 1366);
+  // createCanvas(768, 1024);
+  egg = createSprite(width/2, height/2);
   egg.addAnimation('normal', 'image/egg00.png', 'image/egg01.png');
   egg.velocity.x = 3;
 }
 
 function draw() {
   background(255, 255, 255);
-  image(img,0,0,768, 1024);
+  image(img,0,0,width,height);
   //sprites' visibility can be turned on an off
   //and invisible sprite is still updating normally
 
@@ -37,7 +38,7 @@ function draw() {
 
   //draw the sprites
   drawSprites();
-  image(img1,0,henY,768, 1024);
+  image(img1,0,henY,width,height);
 
   if (count>5){
   henY=0;
@@ -50,7 +51,7 @@ function mousePressed() {
   count++;
   henY=henY+120;
   //create a sprite
-  var flippingegg = createSprite(384, 512);
+  var flippingegg = createSprite(width/2, height/2);
   flippingegg.addAnimation('normal', 'image/egg00.png', 'image/egg30.png');
   //set a self destruction timer (life)
   flippingegg.life = 120;
