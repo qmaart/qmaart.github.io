@@ -69,7 +69,7 @@ function mousePressed() {
 }
 
 function deviceTurn(){
-  if (turnAxis === 'X'||turnAxis === 'Y') {
+  if (turnAxis === 'Y') {
     count++;
     henY=henY+120;
     //create a sprite
