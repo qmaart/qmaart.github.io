@@ -1,10 +1,11 @@
 //Sprite creation
 //Click to create a new sprite with random speed
 
-var egg,chick;
+var egg,chick,bg;
 var chicksound;
 
 function preload(){
+  bg=loadImage('bg.png');
   egg=loadImage('egg.png');
   chick=loadImage('chick.png');
   chicksound = loadSound('chick.wav');
@@ -15,8 +16,9 @@ function setup() {
 }
 
 function draw() {
-  background(252, 201, 224);
+  // background(252, 201, 224);
   // fill(252, 249, 250);
+  image(bg,0,0,1024,1366);
   fill(208, 242, 238);
   textAlign(CENTER);
   textSize(100);
