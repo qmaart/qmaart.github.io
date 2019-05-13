@@ -52,7 +52,7 @@ function draw() {
   }
 }
 
-every mouse press
+//every mouse press
 function mousePressed() {
   count++;
   henY=henY+120;
