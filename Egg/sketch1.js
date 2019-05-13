@@ -34,14 +34,16 @@ function draw() {
   //sprites' visibility can be turned on an off
   //and invisible sprite is still updating normally
 
-  if(mouseIsPressed)
+  if(mouseIsPressed){
     egg.visible = false;
-  else
+  }
+  else{
     egg.visible = true;
+  }
 
-    if(egg.position.x > width/2)
+    if(egg.position.x > width/2){
         egg.position.x = width/2+1;
-
+    }
   //draw the sprites
   drawSprites();
   image(img1,0,henY,width,height);
@@ -82,6 +84,7 @@ function deviceTurn(){
     flippingegg.visible=false;
     // img(img2,random(),random(),200,200);
     }
+}
 }
 
 // function deviceMoved(){
