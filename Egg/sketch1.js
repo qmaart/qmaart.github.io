@@ -69,7 +69,7 @@ function draw() {
 // }
 
 function deviceTurn(){
-  if (turnAxis === 'Y') {
+  if (turnAxis === 'X'||turnAxis === 'Y') {
     count++;
     henY=henY+120;
     //create a sprite
