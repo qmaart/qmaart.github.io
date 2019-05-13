@@ -16,7 +16,8 @@ function setup() {
 
 function draw() {
   background(252, 201, 224);
-  fill(0);
+  // fill(252, 249, 250);
+  fill(208, 242, 238);
   textAlign(CENTER);
   textSize(100);
   text('Click the egg', width/2, height/2);
