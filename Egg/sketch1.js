@@ -2,7 +2,8 @@
 //click on the canvas to create self destructing sprite and toggle visibility
 
 var egg;
-let img, img1,img2,img3,img4;
+let img,img1,img2,img4;
+var bgsound,cookingsound,cracksound;
 var count=1;
 var henY=-1500;
 
@@ -14,6 +15,9 @@ function preload() {
   img2 = loadImage('image/crack.png')
   // img3 = loadImage('image/background.png')
   img4 = loadImage('image/hint.png')
+  bgsound = loadSound('sound/backgroundmusic.mp3');
+  cookingsound = loadSound('sound/cooking.wav');
+  cracksound = loadSound('sound/crack1.wav');
 }
 
 function setup() {
@@ -23,6 +27,8 @@ function setup() {
   egg.addAnimation('normal', 'image/egg00.png', 'image/egg01.png');
   egg.velocity.x = 3;
   egg.scale=1.5;
+  bgsound.loop();
+  cookingsound.loop();
 
 }
 
@@ -66,6 +72,7 @@ function mousePressed() {
   flippingegg.scale=1.5
   if (count>5){
   flippingegg.visible=false;
+  cracksound.play();
   // img(img2,random(),random(),200,200);
   }
 }
@@ -82,6 +89,7 @@ function deviceTurn(){
     flippingegg.scale=1.5
     if (count>5){
     flippingegg.visible=false;
+    cracksound.play();
     // img(img2,random(),random(),200,200);
     }
 }
