@@ -53,20 +53,20 @@ function draw() {
 }
 
 //every mouse press
-function mousePressed() {
-  count++;
-  henY=henY+120;
-  //create a sprite
-  var flippingegg = createSprite(width/2, height/2);
-  flippingegg.addAnimation('normal', 'image/egg00.png', 'image/egg30.png');
-  //set a self destruction timer (life)
-  flippingegg.life = 120;
-  flippingegg.scale=1.5
-  if (count>5){
-  flippingegg.visible=false;
-  // img(img2,random(),random(),200,200);
-  }
-}
+// function mousePressed() {
+//   count++;
+//   henY=henY+120;
+//   //create a sprite
+//   var flippingegg = createSprite(width/2, height/2);
+//   flippingegg.addAnimation('normal', 'image/egg00.png', 'image/egg30.png');
+//   //set a self destruction timer (life)
+//   flippingegg.life = 120;
+//   flippingegg.scale=1.5
+//   if (count>5){
+//   flippingegg.visible=false;
+//   // img(img2,random(),random(),200,200);
+//   }
+// }
 
 // function deviceTurn(){
 //   if (turnAxis === 'Y') {
