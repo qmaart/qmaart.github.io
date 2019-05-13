@@ -2,7 +2,7 @@
 //click on the canvas to create self destructing sprite and toggle visibility
 
 var egg;
-let img,img1,img2,img4;
+let img,img1,img2,img4,bg;
 var bgsound,cookingsound,cracksound;
 var count=1;
 var henY=-1500;
@@ -10,6 +10,7 @@ var henY=-1500;
 
 function preload() {
   //background image
+  bg = loadImage('image/background.png');
   img = loadImage('image/pan.png');
   img1 = loadImage('image/hen.png');
   img2 = loadImage('image/crack.png')
@@ -34,7 +35,7 @@ function setup() {
 
 function draw() {
   background(247, 217, 200);
-  // image(img3,0,0,width,height);
+  image(bg,0,0,width,height);
   image(img,0,0,width,height);
   image(img4,0,0,width,height);
   //sprites' visibility can be turned on an off
@@ -57,7 +58,7 @@ function draw() {
   if (count>5){
   henY=0;
   image(img2,0,0,1000,1000);
-  
+
   }
 }
 
